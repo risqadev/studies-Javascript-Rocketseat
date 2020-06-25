@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Curso Javascript - Roquetseat</title>
+        <style>
+            body {
+                background-color: #3f3f3f;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Curso de Javascript - Roquetseat</h1>
+        
+        <script>
+            function retornaSexo(sexo) {
+                // M, F
+                // Masculino, Feminino
+
+                /* if ( sexo == 'M' ) {
+                    return 'Masculino';
+                } else if ( sexo == 'F') {
+                    return 'Feminino';
+                } else {
+                    return 'Indefinido'
+                } */
+
+                switch (sexo) {
+                    case 'M':
+                        return 'Masculino';
+                    case 'F':
+                        return 'Feminino';
+                    default:
+                        return 'Indefinido';
+                }
+            }
+            
+            var resultado = retornaSexo('qualquer outra coisa que não M ou F');
+            
+            console.log(resultado);
+
+        </script>
+    </body>
+</html>

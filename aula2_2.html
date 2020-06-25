@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript - Roquetseat</title>
+    <style>
+        body {
+            background-color: #3f3f3f;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Curso de Javascript - Roquetseat</h1> 
+    
+    <div class="container">
+        <input type="text" name="nome" placeholder="Digite algo" />
+        <button class="botao">Adicionar</button>
+    </div>
+
+    <script>
+        /** Formas de referenciar elementos na DOM:
+         * document.getElementById('id')
+         * document.getElementsByTagName('tag')
+            como haverá vários, retornará uma lista (array), portanto podemos tomar um especificamente referenciando detro do colchete:
+         * document.getElementsByTagName('tag')[0]
+            vai pegar só a primeira ocorrência
+         * document.getElementsByClassName('classe')
+            tbm retornará um array
+         * document.querySelector('foo')
+            permite percorrer a DOM, referenciando da mesma forma que o CSS
+         * document.querySelectorAll('foo')
+            vai retornar um array
+        */
+
+        /* var inputElement = document.querySelector('div#container input'); */
+
+        var inputElement = document.querySelector('input[name=nome]');
+        var btnElement = document.querySelector('button.botao');
+
+        btnElement.onclick = function() {
+            var text = inputElement.value;
+            alert(text);
+        }
+
+        console.log(inputElement);
+        console.log(btnElement);
+
+    </script>
+</body>
+
+</html>

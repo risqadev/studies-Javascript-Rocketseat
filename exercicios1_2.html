@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript - Roquetseat</title>
+        <style>
+            body {
+                background-color: #3f3f3f;
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Curso de Javascript - Roquetseat</h1>
+        <h2>Exercícios: Módulo 01</h2>
+        <h3>2º exercício</h3>
+        <p>Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:</p>
+        <pre>
+        function pares(x, y) {
+            // código aqui
+        }
+        pares(32, 321);
+        </pre>
+                
+        <script>
+            
+            function pares(x, y) {
+                var numPares = [];
+                for (let i = x; i <= y; i++) {
+                    if ( i % 2 == 0 ) {
+                        numPares.push(i);
+                    }
+                }
+                console.log(numPares);
+                // return numPares ;
+            }
+            pares(29, 49);
+
+        </script>
+    </body>
+</html>

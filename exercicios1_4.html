@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript - Roquetseat</title>
+        <style>
+            body {
+                background-color: #3f3f3f;
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Curso de Javascript - Roquetseat</h1>
+        <h2>Exercícios: Módulo 01</h2>
+        <h3>4º exercício</h3>
+        <p>Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:</p>
+        <pre>
+        function experiencia(anos) {
+            // código aqui
+        }
+
+        var anosEstudo = 7;
+        experiencia(anosEstudo);
+
+        // De 0-1 ano: Iniciante
+        // De 1-3 anos: Intermediário
+        // De 3-6 anos: Avançado
+        // De 7 acima: Jedi Master
+        </pre>
+                        
+        <script>
+            
+            function experiencia(anos) {
+                switch (true) {
+                    case (anos >= 7) :
+                        console.log('Jedi Master');
+                        break;
+                    case (anos >= 3) :
+                        console.log('Avançado');
+                        break;
+                    case (anos >= 1) :
+                        console.log('Intermediário');
+                        break;
+                    default:
+                        console.log('Iniciante');
+                        break;
+                }
+            }
+
+            var anosEstudo = 10;
+            experiencia(anosEstudo);
+            
+        </script>
+    </body>
+</html>

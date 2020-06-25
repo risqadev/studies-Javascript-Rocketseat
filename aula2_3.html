@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript - Roquetseat</title>
+    <style>
+        body {
+            background-color: #3f3f3f;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Curso de Javascript - Roquetseat</h1> 
+    
+    <div class="container">
+        <input type="text" id="nome" />
+    </div>
+
+    <script>
+        /** 
+        */
+
+        var linkElement = document.createElement('a');
+        
+        // Duas formas de adicionar atributos ao elemento:
+        linkElement.setAttribute('href', 'http://rocketseat.com.br/');
+        linkElement.target = '_blank'
+
+        var textElement = document.createTextNode('Acessar site da RocketSeat');
+        linkElement.appendChild(textElement);
+
+        // adiconando elemento ao DOM
+        var containerElement = document.querySelector('div.container');
+        containerElement.appendChild(linkElement);
+
+        // removendo elemento da DOM
+        var inputElement = document.querySelector('input#nome');
+        containerElement.removeChild(inputElement);
+
+    </script>
+</body>
+
+</html>

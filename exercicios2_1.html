@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript - Roquetseat</title>
+    <style>
+        body {
+            background-color: #3f3f3f;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Curso de Javascript - Roquetseat</h1>
+    <h2>Exercícios módulo 2</h2>
+    <h3>1º exercício</h3>
+    
+    <button id="btnInsert">Add element</button>
+    
+    <div class="container">
+
+    </div>
+
+    <script>
+        var btnElement = document.querySelector('#btnInsert');
+
+        var containerElement = document.querySelector('.container');
+        
+        
+        btnElement.onclick = function () {
+            let box = document.createElement('div');
+            box.setAttribute('class', 'box');
+            box.style.width = 100;
+            box.style.height = 100;
+            box.style.backgroundColor = '#00f';
+            box.style.marginTop = 10;
+
+            containerElement.appendChild(box);
+        };
+
+    </script>
+</body>
+
+</html>

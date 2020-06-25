@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript - Roquetseat</title>
+    <style>
+        body {
+            background-color: #3f3f3f;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Curso de Javascript - Roquetseat</h1> 
+    
+    <div class="container">
+        <button onclick="mostraAlerta()">Me pressione</button><br/><br/>
+        <button onmouseover="mostraAlerta()">Passe o mouse</button><br/><br/>
+        <input onkeypress="mostraAlerta()" placeholder="Digite algo" />
+    </div>
+
+    <script>
+        function mostraAlerta() {
+            alert('Função acionada.');
+        }
+    </script>
+</body>
+
+</html>

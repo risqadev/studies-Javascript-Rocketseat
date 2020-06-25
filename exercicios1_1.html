@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript - Roquetseat</title>
+        <style>
+            body {
+                background-color: #3f3f3f;
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Curso de Javascript - Roquetseat</h1>
+        <h2>Exercícios: Módulo 01</h2>
+        <h3>1º Exercício</h3>
+        <p>Crie uma função que dado o objeto a seguir:</p>
+        <pre>
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+        </pre>
+        <p>Retorne o seguinte conteúdo:</p>
+        <pre>
+        O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" com nº 1293.
+        </pre>
+        
+        <script>
+            var endereco = {
+                rua: "Rua dos pinheiros",
+                numero: 1293,
+                bairro: "Centro",
+                cidade: "São Paulo",
+                uf: "SP"
+            };
+            /*
+            function texto() {
+                console.log(`O usuário mora em ${endereco.cidade} / ${endereco.uf}, no bairro ${endereco.bairro}, na rua "${endereco.rua}" com nº ${endereco.numero}.`);
+            }
+            texto()
+            */
+            function texto() {
+                return `O usuário mora em ${endereco.cidade} / ${endereco.uf}, no bairro ${endereco.bairro}, na rua "${endereco.rua}" com nº ${endereco.numero}.` ;
+            }
+            var texto = texto();
+            console.log(texto);
+        </script>
+    </body>
+</html>

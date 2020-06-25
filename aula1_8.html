@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript - Roquetseat</title>
+        <style>
+            body {
+                background-color: #3f3f3f;
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Curso de Javascript - Roquetseat</h1>
+        
+        <script>
+            // INTERVALO E TIMEOUT
+            
+            var i = 1;
+
+            function repete() {
+                console.log('Execução ' + i);
+                i++;
+            }
+
+            function naoRepete() {
+                console.log("Esta é a função com timeout")
+            }
+
+            setInterval(repete, 2000);
+            // intervalo de tempo em que a função será executada (em milissegundos)
+
+            setTimeout(naoRepete, 5000);
+            // tempo para que a execução da função seja iniciada
+
+        </script>
+    </body>
+</html>

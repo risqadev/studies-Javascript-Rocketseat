@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript - Roquetseat</title>
+    <style>
+        body {
+            background-color: #3f3f3f;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Curso de Javascript - Roquetseat</h1>
+    <h2>Exercícios módulo 2</h2>
+    <h3>3º exercício</h3>
+    
+    <div class="container">
+        <ul class="lista">
+
+        </ul>
+    </div>
+
+    <script>
+        var nomes = ["Diego", "Gabriel", "Lucas", "Ricardo", "Rita", "Maria Luiza"];
+        
+        var listElement = document.querySelector('ul.lista');
+
+        for (let i = 0; i < nomes.length; i++) {
+            itemElement = document.createElement('li');
+            itemElement.appendChild(document.createTextNode(nomes[i]));
+
+            listElement.appendChild(itemElement);
+        }
+
+    </script>
+</body>
+
+</html>
