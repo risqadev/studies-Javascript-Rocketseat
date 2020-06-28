@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript - Roquetseat</title>
+    <style>
+        body {
+            background-color: #3f3f3f;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Curso de Javascript - Roquetseat</h1>
+    <h2>Exercícios: Módulo 04</h2>
+        <h3>2º Exercício</h3>
+        <p>Crie uma tela com um <code>&lt;input&gt;</code> que deve receber o nome de um usuário no Github. Após digitar o nome do usuário e clicar no botão buscar a aplicação deve buscar pela API do Github (conforme URL abaixo) os dados de repositórios do usuário e mostrá-los em tela:</p>
+        <p>URL de exemplo: https://api.github.com/users/diego3g/repos</p>
+        <p>Basta alterar "diego3g" pelo nome do usuário.</p>
+        <pre>
+          &lt;input type="text" name="user"&gt;
+          &lt;button onclick="">Adicionar&lt;/button&gt;
+        </pre>
+        <p>Depois de preencher o input e adicionar, a seguinte lista deve aparecer abaixo:</p>
+        <pre>
+          &lt;ul&gt;
+            &lt;li&gt;repo1&lt;/li&gt;
+            &lt;li&gt;repo2&lt;/li&gt;
+            &lt;li&gt;repo3&lt;/li&gt;
+            &lt;li&gt;repo4&lt;/li&gt;
+            &lt;li&gt;repo5&lt;/li&gt;
+           &lt;/ul&gt;
+        </pre>
+    
+    <div class="container">
+      <h3>Execução:</h3>
+
+      <input type="text" name="user" placeholder="Usuário do Github">
+      <button onclick="renderListRepos()">Buscar</button>
+
+      <ul></ul>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./mod4_ex2.js"></script>
+</body>
+
+</html>
