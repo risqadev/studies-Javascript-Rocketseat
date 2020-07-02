@@ -1,30 +1,22 @@
-class List {
+class TodoList {
   constructor() {
-    this.data = [];
+    this.todos = [];
   }
 
-  add(data) {
-    this.data.push(data);
-    console.log(this.data);
-  }
-}
-
-class TodoList extends List {
-  constructor() {
-    super();
-
-    this.usuario = 'Diego';
-  }
-
-  mostraUsuario() {
-    console.log(this.usuario);
+  // métodos estáticos não conseguem acessar outras informações da classe
+  static addTodo() {
+    this.todos.push('Novo todo');
+    console.log(this.todos);
   }
 }
 
-const MinhaLista = new TodoList();
+TodoList.addTodo(); // irá falhar, pois não consegue acessar this.todos
 
-document.getElementById('novotodo').onclick = function () {
-  MinhaLista.add('Novo todo');
+
+class Matematica {
+  static soma(a, b) {
+    return a + b;
+  }
 }
 
-MinhaLista.mostraUsuario();
+console.log(Matematica.soma(1, 2));
