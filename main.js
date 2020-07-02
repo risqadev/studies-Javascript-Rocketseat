@@ -12,7 +12,7 @@ class TodoList {
 
 TodoList.addTodo(); // irá falhar, pois não consegue acessar this.todos
 
-
+// o exemplo abaixo irá funcionar normalmente, pois não depende de nenhuma outra propriedade do objeto, somente dos parâmetros passados.
 class Matematica {
   static soma(a, b) {
     return a + b;
