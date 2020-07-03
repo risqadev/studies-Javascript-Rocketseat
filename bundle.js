@@ -26,6 +26,7 @@ var TodoList = /*#__PURE__*/function () {
 }();
 
 TodoList.addTodo(); // irá falhar, pois não consegue acessar this.todos
+// o exemplo abaixo irá funcionar normalmente, pois não depende de nenhuma outra propriedade do objeto, somente dos parâmetros passados.
 
 var Matematica = /*#__PURE__*/function () {
   function Matematica() {
