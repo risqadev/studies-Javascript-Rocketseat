@@ -23,3 +23,16 @@ minhaPromise()
   .catch(function(error) {
     console.warn(error);
   });
+  
+// os nomes dos parâmetros podem ser outros
+/*const myPromise2 = () => new Promise( (aRes, aRej) => {
+  setTimeout( () => { aRej('Fail') } , 2000);
+});
+
+myPromise2()
+  .then( resposta => {
+    console.log('myPromise2 resolved: ' + resposta);
+  })
+  .catch( erro => {
+    console.log('myPromise2 error: ' + erro);
+  }); */
