@@ -1,5 +1,6 @@
 // map
 const arr = [1, 3, 4, 5, 8, 9];
+console.log(arr);
 
 const mapArr = arr.map( item => item * 2 );
 console.log(mapArr);
@@ -12,7 +13,7 @@ const sum = arr.reduce( (total, next) => total + next );
 console.log(sum);
 
 // filter
-const filter = arr.filter( (item) => item % 2 === 0 );
+const filter = arr.filter( (item) => item % 2 === 0 ); // % resto da divisão por 2
 console.log(filter);
 
 // find
