@@ -1,4 +1,4 @@
-// 4.1
+// 4.1 - Destructuring
 const empresa = {
   nome: 'Rocketseat',
   endereco: {
@@ -13,7 +13,7 @@ console.log(nome);
 console.log(cidade);
 console.log(estado);
 
-// 4.2
+// 4.2 - Destructuring
 function mostraInfo( { nome, idade } ) {
   return `${nome} tem ${idade} anos.`;
 }
@@ -22,7 +22,7 @@ console.log(
   mostraInfo( { nome: 'Diego', idade: 23 } )
 );
 
-// 5.1
+// 5.1 - Rest operator
 const arr = [1, 2, 3, 4, 5, 6];
 
 const [ x, ...y ] = arr;
@@ -39,7 +39,7 @@ function soma(a, ...arr) {
 console.log( soma(1, 2, 3, 4, 5, 6) );
 console.log( soma(1, 2) );
 
-// 5.2
+// 5.2 - Spread operator
 const usuario = {
   nome: 'Diego',
   idade: 23,
@@ -55,3 +55,20 @@ console.log(usuario2);
 
 let usuario3 = {...usuario, endereco: {...usuario.endereco, cidade: 'Lontras'} };
 console.log(usuario3);
+
+// 6 - Template Literals
+const usuario6 = "Diego";
+const idade6 = 23;
+
+console.log(`O usuário ${usuario6} possui ${idade6} anos.`);
+
+// 7 - Object Short Syntax
+const nome7 = 'Diego';
+const idade7 = 23;
+
+const usuario7 = {
+  nome7,
+  idade7,
+  cidade7: 'Rio do Sul'
+}
+console.log(usuario7);
